@@ -1,0 +1,335 @@
+/* Basic Styles */
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+}
+
+.container {
+    max-width: 90%; /* Use percentage for container width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.btn {
+    background-color: #FFA500; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+h1, h2, h3 {
+    font-weight: bold;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 100; 
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000; 
+    text-decoration: none;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-menu li {
+    margin-left: 30px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000; 
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #000; 
+}
+
+
+/* Header Styles */
+header {
+    padding: 100px 0; 
+    text-align: center;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Mulish', sans-serif; 
+    font-size: 48px; 
+    margin-bottom: 10px; 
+}
+
+header p {
+    font-size: 18px; 
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero-image {
+    max-width: 100%; 
+    height: auto; 
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Events and Seminars Styles */
+.events-seminars {
+    padding: 50px 0; 
+}
+
+.events-seminars .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.events-seminars .item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.events-seminars .image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.events-seminars .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Additional Amenities and Services Styles */
+.additional-services {
+    padding: 50px 0; 
+}
+
+.additional-services .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.additional-services .item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.additional-services .image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.additional-services .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Membership Packages Styles */
+.membership {
+    padding: 50px 0; 
+}
+
+.membership .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.membership .item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+.membership .price {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.membership ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+
+/* FAQ Styles */
+.faq {
+    padding: 50px 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h3 {
+    margin-bottom: 5px;
+}
+
+
+/* Contact Us Styles */
+.contact {
+    padding: 50px 0;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.contact-info .item {
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #000;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.map-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+/* To make the website cover the whole screen */
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%; 
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) { 
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
